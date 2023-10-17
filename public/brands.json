@@ -1,0 +1,32 @@
+[
+    {
+      "id": 1,
+      "name": "Toyota",
+      "image": "https://i.ibb.co/S5y36Mb/qijin-xu-JUkd-Ni-G9w3-I-unsplash.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Ford",
+      "image": "https://i.ibb.co/xXjYZXk/haryad-ali-HRtf-KS9y-PRU-unsplash.jpg"
+    },
+    {
+      "id": 3,
+      "name": "BMW",
+      "image": "https://i.ibb.co/qWq0vcL/francesco-la-corte-Bd2-MRjxm-Zec-unsplash.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Mercedes-Benz",
+      "image": "https://i.ibb.co/cYWtXrZ/hydra-berg-H29h-D8-Ulzi-M-unsplash.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Tesla",
+      "image": "https://i.ibb.co/bJvtybd/matt-antonioli-3ak-A0-XDg1-g-unsplash.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Honda",
+      "image": "https://i.ibb.co/qBdMGCJ/r-nolan-1-Zh-Zp-P91ol-Q-unsplash.jpg"
+    }
+  ]

@@ -1,0 +1,24 @@
+import { useLoaderData } from "react-router-dom";
+import Banner from "../Header/Banner";
+import Brands from "../Brands/Brands";
+
+
+const Home = () => {
+
+    const brands = useLoaderData()
+
+    return (
+        <div>
+            <Banner></Banner>
+            <h2>This is home</h2>
+            <div className="grid grid-cols-3">
+                {
+                    brands.map(brand => <Brands key={brands.id} brand={brand}></Brands>)
+                }
+            </div>
+            
+        </div>
+    );
+};
+
+export default Home;
