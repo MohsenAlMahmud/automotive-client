@@ -14,6 +14,9 @@ import AuthProvider from './Providers/AuthProvider';
 import AddProduct from './Component/AddProduct/AddProduct';
 import MyCart from './Component/MyCart/MyCart';
 import BrandDetails from './Component/Brands/BrandDetails';
+import Brands from './Component/Brands/Brands';
+import PostUser from './Component/ServerSide/PostUser';
+import DisplayUserInput from './Component/ServerSide/DisplayUserInput';
 
 
 const router = createBrowserRouter([
@@ -27,8 +30,14 @@ const router = createBrowserRouter([
         loader: () => fetch('/brands.json')
       },
       {
+        path: '/brands',
+        element: <Brands></Brands>,
+        loader: () => fetch('/brands.json')
+      },
+      {
         path: '/brand/:id',
         element: <BrandDetails></BrandDetails>,
+        loader: () => fetch('/brands.json')
         
       },
       {
@@ -46,6 +55,15 @@ const router = createBrowserRouter([
       {
         path: '/register',
         element: <Register></Register>
+      },
+      {
+        path: '/users',
+        element: <PostUser></PostUser>
+      },
+      {
+        path: '/displayUserInput',
+        element: <DisplayUserInput></DisplayUserInput>,
+        loader:  () => fetch(`http://localhost:5000/users`)
       },
     ]
   },

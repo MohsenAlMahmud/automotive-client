@@ -1,9 +1,13 @@
-import { Link } from "react-router-dom";
+import { Link, } from "react-router-dom";
+
 
 
 const Brands = ({ brand }) => {
 
     const { id, image, name } = brand;
+
+    // const brands = useRouteLoaderData();
+    // console.log(brands)
 
     return (
         <div>
@@ -17,6 +21,7 @@ const Brands = ({ brand }) => {
                     </div>
                 </div>
             </Link>
+            
         </div>
     );
 };

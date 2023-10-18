@@ -4,6 +4,7 @@ import Brands from "../Brands/Brands";
 import Footer from "./Footer";
 
 
+
 const Home = () => {
 
     const brands = useLoaderData()
@@ -16,9 +17,9 @@ const Home = () => {
                 {
                     brands.map(brand => <Brands key={brands.id} brand={brand}></Brands>)
                 }
-            </div>
+            </div>            
             <Footer></Footer>
-            
+
         </div>
     );
 };
