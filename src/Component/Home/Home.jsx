@@ -3,6 +3,7 @@ import Banner from "../Header/Banner";
 import Brands from "../Brands/Brands";
 import Footer from "./Footer";
 import WhyChooseUs from "./WhyChooseUs";
+import AreasWeService from "./AreasWeService";
 
 
 
@@ -21,6 +22,7 @@ const Home = () => {
                 }
             </div>
             <WhyChooseUs></WhyChooseUs>
+            <AreasWeService></AreasWeService>
                        
             <Footer></Footer>
 

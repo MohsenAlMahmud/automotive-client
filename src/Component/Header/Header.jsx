@@ -5,8 +5,13 @@ import { useContext } from "react";
 
 const Header = () => {
 
-    const { user, logOut } = useContext(AuthContext);
+    // const [darkMode, setDarkMode] = useState(false);
 
+    const { user, logOut } = useContext(AuthContext);
+    // const toggleDarkMode = () => {
+    //     setDarkMode(!darkMode);
+
+    //   };
     const handleSignOut = () => {
         logOut()
             .then()
@@ -30,6 +35,12 @@ const Header = () => {
                         </ul>
                     </div>
                     <img className="w-24 h-16" src="https://i.ibb.co/d09vfYN/Screenshot-2023-10-18-024901.png" alt="" />
+                    <div className="form-control">
+                        <label className="label cursor-pointer p-3">
+                            <span className="label-text">Theme</span>
+                            <input type="checkbox" className="toggle"  />
+                        </label>
+                    </div>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">

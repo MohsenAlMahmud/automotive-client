@@ -20,6 +20,7 @@ const BrandDetails = () => {
                         <figure className="flex-1"><img src="https://i.ibb.co/PgXNdc0/toyota-1.jpg" className="w-full" /></figure>
                         <div className="flex justify-center items-center flex-1 p-10">
                             <div className="py-10 px-10">
+                                <h1 className="text-5xl font-bold pb-10">TOYOTA</h1>
                                 <h2 className="card-title pt-10">Cutting-Edge Tech:</h2>
                                 <p>Explore the future with Toyota's state-of-the-art tech, ensuring a safe and connected driving experience.</p>
                                 <h2 className="card-title pt-10">Dependable Quality:</h2>
@@ -40,6 +41,7 @@ const BrandDetails = () => {
                         <figure className="flex-1"><img src="https://i.ibb.co/P5JVqD6/ford-3.jpg" className="w-full" /></figure>
                         <div className="flex justify-center items-center flex-1 p-10">
                             <div className="py-10 px-10">
+                            <h1 className="text-5xl font-bold pb-10">FORD</h1>
                                 <h2 className="card-title pt-10">Legendary Performance:</h2>
                                 <p>Elevate your driving experience with Ford's unmatched performance and innovation, embracing a legacy of power and precision.</p>
                                 <h2 className="card-title pt-10">Trusted Heritage:</h2>
@@ -60,6 +62,7 @@ const BrandDetails = () => {
                         <figure className="flex-1"><img src="https://i.ibb.co/gt5Xjy2/bmw-1.jpg" className="w-full" /></figure>
                         <div className="flex justify-center items-center flex-1 p-10">
                             <div className="py-10 px-10">
+                            <h1 className="text-5xl font-bold pb-10">BMW</h1>
                                 <h2 className="card-title pt-10">Ultimate Driving Experience:</h2>
                                 <p>Elevate your drive with BMW's commitment to the ultimate driving experience, where luxury, performance, and precision meet on every journey.</p>
                                 <h2 className="card-title pt-10">Timeless Elegance:</h2>
@@ -80,6 +83,7 @@ const BrandDetails = () => {
                         <figure className="flex-1"><img src="https://i.ibb.co/3fgW8PT/Mercedes-Benz-1.jpg" className="w-full" /></figure>
                         <div className="flex justify-center items-center flex-1 p-10">
                             <div className="py-10 px-10">
+                            <h1 className="text-5xl font-bold pb-10">MERCEDES-BENZ</h1>
                                 <h2 className="card-title pt-10">Exquisite Craftsmanship:</h2>
                                 <p>Experience the epitome of automotive craftsmanship with Mercedes-Benz, where precision engineering and attention to detail result in vehicles of unparalleled quality and luxury.</p>
                                 <h2 className="card-title pt-10">Innovation Beyond Imagination:</h2>
@@ -100,6 +104,7 @@ const BrandDetails = () => {
                         <figure className="flex-1"><img src="https://i.ibb.co/8j4tDNT/Tesla-1.jpg" className="w-full" /></figure>
                         <div className="flex justify-center items-center flex-1 p-10">
                             <div className="py-10 px-10">
+                            <h1 className="text-5xl font-bold pb-10">TESLA</h1>
                                 <h2 className="card-title pt-10">Electric Revolution:</h2>
                                 <p>Join the electric revolution with Tesla, where innovation and sustainability meet to redefine the future of driving. Experience zero-emission vehicles and a cleaner, more efficient way to travel.</p>
                                 <h2 className="card-title pt-10">Autonomous Driving:</h2>
@@ -120,6 +125,7 @@ const BrandDetails = () => {
                         <figure className="flex-1"><img src="https://i.ibb.co/dJj0NB3/Honda-1.jpg" className="w-full" /></figure>
                         <div className="flex justify-center items-center flex-1 p-10">
                             <div className="py-10 px-10">
+                            <h1 className="text-5xl font-bold pb-10">HONDA</h1>
                                 <h2 className="card-title pt-10">Reliable Performance:</h2>
                                 <p>Choose Honda for dependable performance and longevity, backed by a reputation for quality and reliability that you can trust on every journey.</p>
                                 <h2 className="card-title pt-10">Innovative Efficiency: </h2>
