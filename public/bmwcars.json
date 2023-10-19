@@ -1,0 +1,34 @@
+[
+    {
+      "image": "https://i.ibb.co/Y8MNQG2/bmw-1.jpg",
+      "name": "BMW 3 Series",
+      "brand": "BMW",
+      "type": "Sedan",
+      "price": "$40,000",
+      "short_description": "A luxury sedan with a perfect balance of performance and elegance."
+    },
+    {
+      "image": "https://i.ibb.co/Kx9DjvG/bmw-2.jpg",
+      "name": "BMW 5 Series",
+      "brand": "BMW",
+      "type": "Sedan",
+      "price": "$55,000",
+      "short_description": "An executive sedan known for its advanced technology and comfort."
+    },
+    {
+      "image": "https://i.ibb.co/h71hBJz/bmw-3.jpg",
+      "name": "BMW X3",
+      "brand": "BMW",
+      "type": "SUV",
+      "price": "$45,000",
+      "short_description": "A compact luxury SUV with a sporty character."
+    },
+    {
+      "image": "https://i.ibb.co/0X3bwTZ/bmw-4.jpg",
+      "name": "BMW Z4",
+      "brand": "BMW",
+      "type": "Convertible",
+      "price": "$60,000",
+      "short_description": "A stylish and powerful convertible sports car."
+    }
+  ]

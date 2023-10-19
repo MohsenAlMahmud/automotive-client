@@ -1,0 +1,34 @@
+[
+    {
+      "image": "https://i.ibb.co/RpjFMLC/mb-1.jpg",
+      "name": "Mercedes-Benz A-Class",
+      "brand": "Mercedes-Benz",
+      "type": "Hatchback",
+      "price": "$35,000",
+      "short_description": "A compact luxury hatchback with advanced technology and style."
+    },
+    {
+      "image": "https://i.ibb.co/RPBCw6y/mb-2.jpg",
+      "name": "Mercedes-Benz C-Class",
+      "brand": "Mercedes-Benz",
+      "type": "Sedan",
+      "price": "$45,000",
+      "short_description": "A sophisticated and elegant luxury sedan with performance."
+    },
+    {
+      "image": "https://i.ibb.co/vwRq23p/mb-3.jpg",
+      "name": "Mercedes-Benz GLC",
+      "brand": "Mercedes-Benz",
+      "type": "SUV",
+      "price": "$50,000",
+      "short_description": "A midsize luxury SUV offering a blend of comfort and versatility."
+    },
+    {
+      "image": "https://i.ibb.co/NNMHngV/mb-4.jpg",
+      "name": "Mercedes-Benz SLS AMG",
+      "brand": "Mercedes-Benz",
+      "type": "Sports Car",
+      "price": "$150,000",
+      "short_description": "An iconic and powerful sports car with gullwing doors."
+    }
+  ]

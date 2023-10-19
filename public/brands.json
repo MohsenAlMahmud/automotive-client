@@ -1,7 +1,7 @@
 [
     {
       "id": 1,
-      "name": "Toyota",
+      "brand": "Toyota",
       "image": "https://i.ibb.co/S5y36Mb/qijin-xu-JUkd-Ni-G9w3-I-unsplash.jpg",
       "adv_image_1": "https://i.ibb.co/PgXNdc0/toyota-1.jpg",
       "adv_image_2": "https://i.ibb.co/nCMVNnf/toyota-2.jpg",
@@ -9,7 +9,7 @@
     },
     {
       "id": 2,
-      "name": "Ford",
+      "brand": "Ford",
       "image": "https://i.ibb.co/xXjYZXk/haryad-ali-HRtf-KS9y-PRU-unsplash.jpg",
       "adv_image_1": "https://i.ibb.co/YRRhH5Q/ford-2.jpg",
       "adv_image_2": "https://i.ibb.co/YRRhH5Q/ford-2.jpg",
@@ -17,7 +17,7 @@
     },
     {
       "id": 3,
-      "name": "BMW",
+      "brand": "BMW",
       "image": "https://i.ibb.co/qWq0vcL/francesco-la-corte-Bd2-MRjxm-Zec-unsplash.jpg",
       "adv_image_1": "https://i.ibb.co/gt5Xjy2/bmw-1.jpg",
       "adv_image_2": "https://i.ibb.co/cbpN2Jk/bmw-2.jpg",
@@ -25,7 +25,7 @@
     },
     {
       "id": 4,
-      "name": "Mercedes-Benz",
+      "brand": "Mercedes-Benz",
       "image": "https://i.ibb.co/cYWtXrZ/hydra-berg-H29h-D8-Ulzi-M-unsplash.jpg",
       "adv_image_1": "https://i.ibb.co/3fgW8PT/Mercedes-Benz-1.jpg",
       "adv_image_2": "https://i.ibb.co/KbNS7T4/Mercedes-Benz-2.jpg",
@@ -33,7 +33,7 @@
     },
     {
       "id": 5,
-      "name": "Tesla",
+      "brand": "Tesla",
       "image": "https://i.ibb.co/bJvtybd/matt-antonioli-3ak-A0-XDg1-g-unsplash.jpg",
       "adv_image_1": "https://i.ibb.co/8j4tDNT/Tesla-1.jpg",
       "adv_image_2": "https://i.ibb.co/X8GrN60/Tesla-2.jpg",
@@ -41,7 +41,7 @@
     },
     {
       "id": 6,
-      "name": "Honda",
+      "brand": "Honda",
       "image": "https://i.ibb.co/qBdMGCJ/r-nolan-1-Zh-Zp-P91ol-Q-unsplash.jpg",
       "adv_image_1": "https://i.ibb.co/dJj0NB3/Honda-1.jpg",
       "adv_image_2": "https://i.ibb.co/HDpPgZp/Honda-2.jpg",

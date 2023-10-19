@@ -1,0 +1,34 @@
+[
+    {
+      "image": "https://i.ibb.co/WGq3H00/ty-1.jpg",
+      "name": "Toyota Corolla",
+      "brand": "Toyota",
+      "type": "Sedan",
+      "price": "$20,000",
+      "short_description": "A reliable and fuel-efficient compact sedan."
+    },
+    {
+      "image": "https://i.ibb.co/d2KYPFp/ty-2.jpg",
+      "name": "Toyota Camry",
+      "brand": "Toyota",
+      "type": "Sedan",
+      "price": "$25,000",
+      "short_description": "A midsize sedan known for its comfort and performance."
+    },
+    {
+      "image": "https://i.ibb.co/sQ2kPsQ/ty-3.jpg",
+      "name": "Toyota RAV4",
+      "brand": "Toyota",
+      "type": "SUV",
+      "price": "$28,000",
+      "short_description": "A popular compact SUV with great versatility."
+    },
+    {
+      "image": "https://i.ibb.co/p0GVw6q/ty-4.jpg",
+      "name": "Toyota Prius",
+      "brand": "Toyota",
+      "type": "Hybrid",
+      "price": "$24,000",
+      "short_description": "The iconic hybrid car known for its exceptional fuel economy."
+    }
+  ]

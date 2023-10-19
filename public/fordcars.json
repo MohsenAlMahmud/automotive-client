@@ -1,0 +1,34 @@
+[
+    {
+      "image": "https://i.ibb.co/DW2f30J/ford-1.jpg",
+      "name": "Ford Mustang",
+      "brand": "Ford",
+      "type": "Sports Car",
+      "price": "$45,000",
+      "short_description": "A classic American sports car with powerful performance."
+    },
+    {
+      "image": "https://i.ibb.co/hcTDQdx/ford-2.jpg",
+      "name": "Ford F-150",
+      "brand": "Ford",
+      "type": "Truck",
+      "price": "$35,000",
+      "short_description": "The best-selling full-size pickup truck with rugged capabilities."
+    },
+    {
+      "image": "https://i.ibb.co/YN1rsXv/ford-3.jpg",
+      "name": "Ford Focus",
+      "brand": "Ford",
+      "type": "Hatchback",
+      "price": "$22,000",
+      "short_description": "A compact hatchback with a fun-to-drive nature."
+    },
+    {
+      "image": "https://i.ibb.co/7pGLQ2K/ford-4.jpg",
+      "name": "Ford Escape",
+      "brand": "Ford",
+      "type": "SUV",
+      "price": "$30,000",
+      "short_description": "A versatile and comfortable SUV for urban adventures."
+    }
+  ]

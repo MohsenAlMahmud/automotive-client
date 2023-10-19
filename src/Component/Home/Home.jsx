@@ -5,6 +5,7 @@ import Footer from "./Footer";
 
 
 
+
 const Home = () => {
 
     const brands = useLoaderData()
@@ -15,9 +16,10 @@ const Home = () => {
             <h2>This is home</h2>
             <div className="grid grid-cols-3 gap-10">
                 {
-                    brands.map(brand => <Brands key={brands.id} brand={brand}></Brands>)
+                    brands.map(brandName => <Brands key={brandName.id} brandName={brandName}></Brands>)
                 }
-            </div>            
+            </div>
+                       
             <Footer></Footer>
 
         </div>

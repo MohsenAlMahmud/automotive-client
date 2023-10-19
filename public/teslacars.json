@@ -1,0 +1,34 @@
+[
+    {
+      "image": "https://i.ibb.co/Hz9BJbb/tesla-1.jpg",
+      "name": "Tesla Model 3",
+      "brand": "Tesla",
+      "type": "Electric Sedan",
+      "price": "$40,000",
+      "short_description": "An affordable electric sedan with cutting-edge technology."
+    },
+    {
+      "image": "https://i.ibb.co/bs4ztwz/tesla-2.jpg",
+      "name": "Tesla Model S",
+      "brand": "Tesla",
+      "type": "Luxury Electric Sedan",
+      "price": "$80,000",
+      "short_description": "A premium electric sedan known for its range and performance."
+    },
+    {
+      "image": "https://i.ibb.co/JvPkZcH/tesla-3.jpg",
+      "name": "Tesla Model X",
+      "brand": "Tesla",
+      "type": "Electric SUV",
+      "price": "$70,000",
+      "short_description": "An electric SUV with distinctive falcon-wing doors and versatility."
+    },
+    {
+      "image": "https://i.ibb.co/KxD5tHY/tesla-4.jpg",
+      "name": "Tesla Model Y",
+      "brand": "Tesla",
+      "type": "Compact Electric SUV",
+      "price": "$50,000",
+      "short_description": "A compact electric SUV offering a blend of style and efficiency."
+    }
+  ]

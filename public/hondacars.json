@@ -1,0 +1,34 @@
+[
+    {
+      "image": "https://i.ibb.co/C5tQM9D/honda-1.jpg",
+      "name": "Honda Civic",
+      "brand": "Honda",
+      "type": "Sedan",
+      "price": "$25,000",
+      "short_description": "A popular compact sedan known for its reliability and fuel efficiency."
+    },
+    {
+      "image": "https://i.ibb.co/DCMgcyc/honda-2.jpg",
+      "name": "Honda CR-V",
+      "brand": "Honda",
+      "type": "SUV",
+      "price": "$30,000",
+      "short_description": "A versatile and comfortable SUV for family adventures."
+    },
+    {
+      "image": "https://i.ibb.co/Kzz9ZMM/honda-3.jpg",
+      "name": "Honda Accord",
+      "brand": "Honda",
+      "type": "Sedan",
+      "price": "$28,000",
+      "short_description": "A midsize sedan with a well-balanced mix of style and performance."
+    },
+    {
+      "image": "https://i.ibb.co/MfMKgNc/honda-4.jpg",
+      "name": "Honda Fit",
+      "brand": "Honda",
+      "type": "Hatchback",
+      "price": "$20,000",
+      "short_description": "A versatile and compact hatchback designed for urban life."
+    }
+  ]
