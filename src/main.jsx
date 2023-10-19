@@ -19,6 +19,8 @@ import PostUser from './Component/ServerSide/PostUser';
 import DisplayUserInput from './Component/ServerSide/DisplayUserInput';
 import IndivisualBrandProduct from './Component/Brands/IndivisualBrandProduct';
 import UpdateProduct from './Component/ServerSide/UpdateProduct';
+import ProductDetails from './Component/Brands/ProductDetails';
+import PrivateRoute from './PrivateRoute';
 
 
 const router = createBrowserRouter([
@@ -39,27 +41,24 @@ const router = createBrowserRouter([
       },
       {
         path: '/brand/:brand',
-        element: <BrandDetails></BrandDetails>,
-        loader: () => fetch('/brands.json'),
-        
+        element: <BrandDetails></BrandDetails>,        
+        loader:  () => fetch(`http://localhost:5000/users`)
         
       },
       {
         path: '/individualBrandProduct/:brand',
-        element: <IndivisualBrandProduct></IndivisualBrandProduct>,        
-        // loader: (params) => {
-        //   return fetch(`http://localhost:5000/users?brand=${params.brand}`)
-        //   .then((response) => response.json());
-        // }
+        element: <IndivisualBrandProduct></IndivisualBrandProduct>,
         
       },
-      // {
-      //   path: '/addProduct',
-      //   element: <AddProduct></AddProduct>
-      // },
+      {
+        path: '/productDetails/:id',
+        element: <ProductDetails></ProductDetails>,
+        loader:  () => fetch(`http://localhost:5000/users`)
+      },
+      
       {
         path: '/myCart',
-        element: <MyCart></MyCart>
+        element: <PrivateRoute><MyCart></MyCart></PrivateRoute>
       },
       {
         path: '/login',
@@ -71,11 +70,11 @@ const router = createBrowserRouter([
       },
       {
         path: '/addProduct',
-        element: <PostUser></PostUser>
+        element: <PrivateRoute><PostUser></PostUser></PrivateRoute>
       },
       {
         path: '/updateProduct/:id',
-        element: <UpdateProduct></UpdateProduct>,
+        element: <PrivateRoute><UpdateProduct></UpdateProduct></PrivateRoute>,
         loader: ({params}) => {
           console.log(params);
           return fetch(`http://localhost:5000/users/${params.id}`);

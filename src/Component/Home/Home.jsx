@@ -2,6 +2,7 @@ import { useLoaderData } from "react-router-dom";
 import Banner from "../Header/Banner";
 import Brands from "../Brands/Brands";
 import Footer from "./Footer";
+import WhyChooseUs from "./WhyChooseUs";
 
 
 
@@ -19,6 +20,7 @@ const Home = () => {
                     brands.map(brandName => <Brands key={brandName.id} brandName={brandName}></Brands>)
                 }
             </div>
+            <WhyChooseUs></WhyChooseUs>
                        
             <Footer></Footer>
 
