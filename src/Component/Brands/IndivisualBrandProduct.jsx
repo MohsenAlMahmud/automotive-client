@@ -36,7 +36,7 @@ const IndivisualBrandProduct = ({ brandName }) => {
     return (
         <div>
             <h1 className="text-5xl font-bold text-center pb-6">{brand}</h1>
-            <div className="grid grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-3 gap-6">
                 { filteredUsers.map(product => (
                     <div key={product._id}>
                         <div className="card card-compact bg-base-100 shadow-xl">

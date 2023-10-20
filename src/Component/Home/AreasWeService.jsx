@@ -4,7 +4,7 @@ const AreasWeService = () => {
     return (
         <div>
             <h2 className="text-5xl font-bold text-center py-8">Areas We Service</h2>
-            <div className="flex py-8">
+            <div className="md:flex py-8">
                 <div className="grid grid-cols-3 flex-1">
                     {/* <h2 className="text-2xl font-semibold">Areas</h2> */}
                     <div className="text-center p-12">
