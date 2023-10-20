@@ -39,13 +39,13 @@ const IndivisualBrandProduct = ({ brandName }) => {
             <div className="grid grid-cols-3">
                 { filteredUsers.map(product => (
                     <div key={product._id}>
-                        <div className="card card-compact w-96 bg-base-100 shadow-xl">
+                        <div className="card card-compact bg-base-100 shadow-xl">
                             <figure><img src={product.image} alt="Shoes" /></figure>
                             <div className="card-body">
                                 <h2 className="card-title">{product.name}</h2>
                                 <h2 className="card-title">{product.type}</h2>
                                 <p>{product.price}</p>
-                                {/* <p>{product.shortDescription}</p> */}
+                                <p>{product.rating}</p>
                                 <div className="card-actions justify-end">
                                     <Link to={`/productDetails/${product._id}`}><button className="btn btn-primary">Details</button></Link>
                                     <Link to={`/updateProduct/${product._id}`}><button className="btn btn-primary">Update</button></Link>

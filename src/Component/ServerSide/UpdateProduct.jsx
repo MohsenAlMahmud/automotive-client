@@ -16,8 +16,9 @@ const UpdateProduct = () => {
         const type = form.type.value;
         const price = form.price.value;
         const shortDescription = form.shortDescription.value;
+        const rating = form.rating.value;
 
-        const updateData = { image, name, brand, type, price, shortDescription};
+        const updateData = { image, name, brand, type, price, shortDescription, rating};
         console.log(updateData);
 
         fetch(`http://localhost:5000/users/${singleData._id}`, {
@@ -30,7 +31,8 @@ const UpdateProduct = () => {
         })
         .then(res => res.json())
         .then(data =>{
-            console.log(data)
+            console.log(data);
+            form.reset();
         })
 
 
@@ -77,6 +79,12 @@ const UpdateProduct = () => {
                         <span className="label-text text-lg font-medium">Short Description About Product</span>
                     </label>
                     <input type="text" defaultValue={singleData?.shortDescription} name="shortDescription" placeholder="Description" className="input input-bordered" />
+                </div>
+                <div className="form-control">
+                    <label className="label">
+                        <span className="label-text text-lg font-medium">Rating</span>
+                    </label>
+                    <input type="text" defaultValue={singleData?.rating} name="rating" placeholder="Rating" className="input input-bordered" />
                 </div>
 
                 <div className="form-control mt-6">

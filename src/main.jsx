@@ -21,6 +21,7 @@ import IndivisualBrandProduct from './Component/Brands/IndivisualBrandProduct';
 import UpdateProduct from './Component/ServerSide/UpdateProduct';
 import ProductDetails from './Component/Brands/ProductDetails';
 import PrivateRoute from './PrivateRoute';
+import Page404 from './Component/Home/Page404';
 
 
 const router = createBrowserRouter([
@@ -58,7 +59,8 @@ const router = createBrowserRouter([
       
       {
         path: '/myCart',
-        element: <PrivateRoute><MyCart></MyCart></PrivateRoute>
+        element: <PrivateRoute><MyCart></MyCart></PrivateRoute>,
+        loader:  () => fetch(`http://localhost:5000/products`)
       },
       {
         path: '/login',
@@ -84,6 +86,10 @@ const router = createBrowserRouter([
         path: '/displayUserInput',
         element: <DisplayUserInput></DisplayUserInput>,
         loader:  () => fetch(`http://localhost:5000/users`)
+      },
+      {
+        path: '/*',
+        element: <Page404></Page404>        
       },
     ]
   },
