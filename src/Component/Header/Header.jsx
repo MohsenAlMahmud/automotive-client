@@ -37,7 +37,7 @@ const Header = () => {
                     <img className="w-24 h-16" src="https://i.ibb.co/d09vfYN/Screenshot-2023-10-18-024901.png" alt="" />
                     <div className="form-control">
                         <label className="label cursor-pointer p-3">
-                            <span className="label-text">Theme</span>
+                            <span className="label-text p-4">Theme</span>
                             <input type="checkbox" className="toggle"  />
                         </label>
                     </div>
@@ -51,10 +51,10 @@ const Header = () => {
                         <li><NavLink to="/myCart">My Cart</NavLink></li>
                     </ul>
                 </div>
-                <div className="navbar-end">
+                <div className="navbar-end p-4">
                     {
                         user ?
-                            <><span className="">{user.email}</span><span className=""><img className="w-12 rounded-full" src={user.photoURL ? user.photoURL : "https://i.ibb.co/MSHTpdv/user.jpg"} alt="picture" /></span><button onClick={handleSignOut} className="btn btn-ghost">Sign Out</button></>
+                            <><span className="p-4">{user.email}</span><span className=""><img className="w-12 rounded-full" src={user.photoURL ? user.photoURL : "https://i.ibb.co/MSHTpdv/user.jpg"} alt="picture" /></span><button onClick={handleSignOut} className="btn btn-ghost">Sign Out</button></>
 
                             :
                             <Link to='/login'><button className="btn btn-ghost">Login</button></Link>

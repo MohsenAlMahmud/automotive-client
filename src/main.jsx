@@ -24,6 +24,8 @@ import PrivateRoute from './PrivateRoute';
 import Page404 from './Component/Home/Page404';
 
 
+
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -43,7 +45,7 @@ const router = createBrowserRouter([
       {
         path: '/brand/:brand',
         element: <BrandDetails></BrandDetails>,        
-        loader:  () => fetch(`http://localhost:5000/users`)
+        loader:  () => fetch(`https://automotive-server-nine.vercel.app/users`)
         
       },
       {
@@ -54,13 +56,13 @@ const router = createBrowserRouter([
       {
         path: '/productDetails/:id',
         element: <PrivateRoute><ProductDetails></ProductDetails></PrivateRoute>,
-        loader:  () => fetch(`http://localhost:5000/users`)
+        loader:  () => fetch(`https://automotive-server-nine.vercel.app/users`)
       },
       
       {
         path: '/myCart',
         element: <PrivateRoute><MyCart></MyCart></PrivateRoute>,
-        loader:  () => fetch(`http://localhost:5000/products`)
+        loader:  () => fetch(`https://automotive-server-nine.vercel.app/products`)
       },
       {
         path: '/login',
@@ -79,13 +81,13 @@ const router = createBrowserRouter([
         element: <PrivateRoute><UpdateProduct></UpdateProduct></PrivateRoute>,
         loader: ({params}) => {
           console.log(params);
-          return fetch(`http://localhost:5000/users/${params.id}`);
+          return fetch(`https://automotive-server-nine.vercel.app/users/${params.id}`);
         },
       },
       {
         path: '/displayUserInput',
         element: <DisplayUserInput></DisplayUserInput>,
-        loader:  () => fetch(`http://localhost:5000/users`)
+        loader:  () => fetch(`https://automotive-server-nine.vercel.app/users`)
       },
       {
         path: '/*',

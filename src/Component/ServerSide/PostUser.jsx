@@ -1,3 +1,4 @@
+import Swal from "sweetalert2";
 
 
 const PostUser = () => {
@@ -13,12 +14,13 @@ const PostUser = () => {
         const price = form.price.value;
         const shortDescription = form.shortDescription.value;
         const rating = form.rating.value;
+        const detailDescription = form.detailDescription.value;
         // console.log(image, name, type, price, shortDescription);
 
-        const userData = { image, name, brand, type, price, shortDescription, rating };
+        const userData = { image, name, brand, type, price, shortDescription, rating, detailDescription };
         console.log(userData);
 
-        fetch('http://localhost:5000/users', {
+        fetch('https://automotive-server-nine.vercel.app/users', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -28,7 +30,14 @@ const PostUser = () => {
             .then(res => res.json())
             .then(data => {
                 console.log(data);
-                form.reset();
+                
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'There is no product available now',
+                    footer: '<a href="">Why do I have this issue?</a>'
+                  });
+                  form.reset();
             })
 
     }
@@ -78,6 +87,12 @@ const PostUser = () => {
                         <span className="label-text text-lg font-medium">Rating</span>
                     </label>
                     <input type="text" name="rating" placeholder="Rating" className="input input-bordered" />
+                </div>
+                <div className="form-control">
+                    <label className="label">
+                        <span className="label-text text-lg font-medium">Detail Description</span>
+                    </label>
+                    <input type="text" name="detailDescription" placeholder="Detail Description" className="input input-bordered" />
                 </div>
                 
 

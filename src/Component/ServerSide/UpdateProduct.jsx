@@ -17,11 +17,12 @@ const UpdateProduct = () => {
         const price = form.price.value;
         const shortDescription = form.shortDescription.value;
         const rating = form.rating.value;
+        const detailDescription = form.detailDescription.value;
 
-        const updateData = { image, name, brand, type, price, shortDescription, rating};
+        const updateData = { image, name, brand, type, price, shortDescription, rating, detailDescription};
         console.log(updateData);
 
-        fetch(`http://localhost:5000/users/${singleData._id}`, {
+        fetch(`https://automotive-server-nine.vercel.app/users/${singleData._id}`, {
             method: "PUT",
             headers: {
                 'content-type': 'application/json',
@@ -32,7 +33,7 @@ const UpdateProduct = () => {
         .then(res => res.json())
         .then(data =>{
             console.log(data);
-            form.reset();
+            // form.reset();
         })
 
 
@@ -85,6 +86,12 @@ const UpdateProduct = () => {
                         <span className="label-text text-lg font-medium">Rating</span>
                     </label>
                     <input type="text" defaultValue={singleData?.rating} name="rating" placeholder="Rating" className="input input-bordered" />
+                </div>
+                <div className="form-control">
+                    <label className="label">
+                        <span className="label-text text-lg font-medium">Detail Description</span>
+                    </label>
+                    <input type="text" defaultValue={singleData?.rating} name="detailDescription" placeholder="Detail Description" className="input input-bordered" />
                 </div>
 
                 <div className="form-control mt-6">

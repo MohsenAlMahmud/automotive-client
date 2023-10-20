@@ -5,7 +5,8 @@
       "brand": "Mercedes-Benz",
       "type": "Hatchback",
       "price": "$35,000",
-      "short_description": "A compact luxury hatchback with advanced technology and style."
+      "short_description": "A compact luxury hatchback with advanced technology and style.",
+      "detail_description": "Mercedes-Benz, a prestigious German luxury automobile manufacturer, is synonymous with elegance, innovation, and engineering excellence. Founded in 1926, the brand's three-pointed star emblem represents its dominance on land, sea, and air. Mercedes-Benz has a storied history of pioneering advancements in automotive technology and safety. It has consistently produced a lineup of opulent vehicles, from the iconic Mercedes-Benz S-Class, known for its cutting-edge technology and unparalleled comfort, to the sporty and performance-oriented Mercedes-AMG models. Mercedes-Benz's commitment to innovation is evident in its development of autonomous driving systems, electric vehicles like the EQC, and a dedication to sustainable mobility. The brand's reputation for safety and advanced driver assistance features, exemplified through the Mercedes-Benz Intelligent Drive, makes it a benchmark for automotive safety. With a global presence and a dedication to delivering an unmatched luxury experience, Mercedes-Benz continues to set the standard for high-end automobiles and stands as a symbol of German engineering excellence and luxury."
     },
     {
       "image": "https://i.ibb.co/RPBCw6y/mb-2.jpg",

@@ -15,7 +15,7 @@ const Home = () => {
     return (
         <div>
             <Banner></Banner>
-            <h2>This is home</h2>
+            
             <div className="grid grid-cols-3 gap-10">
                 {
                     brands.map(brandName => <Brands key={brandName.id} brandName={brandName}></Brands>)

@@ -5,7 +5,13 @@
       "brand": "Tesla",
       "type": "Electric Sedan",
       "price": "$40,000",
-      "short_description": "An affordable electric sedan with cutting-edge technology."
+      "short_description": "An affordable electric sedan with cutting-edge technology.",
+      "detail_description": "Tesla, founded in 2003 by Elon Musk and a group of engineers, is a groundbreaking American electric vehicle (EV) and clean energy company that has redefined the automotive industry. Renowned for its commitment to sustainability and cutting-edge technology, Tesla has become a symbol of innovation and eco-conscious transportation. The brand's flagship electric vehicles include the Tesla Model S, Model 3, Model X, and Model Y, each lauded for their long-range capabilities, high-performance, and advanced autonomous driving features through Tesla's Autopilot system. Tesla's energy division offers solar panels, solar roofs, and energy storage solutions like the Powerwall, enabling consumers to generate and store their own clean energy. The Supercharger network, Tesla's proprietary charging infrastructure, facilitates long-distance electric travel. Tesla's Gigafactories, massive production facilities, churn out batteries and electric vehicles at an unprecedented scale, significantly impacting the global EV market. Tesla has played a pivotal role in accelerating the transition to sustainable transportation, challenging the status quo, and pushing the boundaries of electric vehicle technology. The company's mission is not just to manufacture vehicles but to create a sustainable future, and its influence extends beyond the automotive industry into renewable energy and space exploration through ventures like SpaceX. Tesla's brand embodies a vision of a world with zero-emission, efficient transportation, and it continues to shape the future of mobility."
+      
+      
+      
+      
+     
     },
     {
       "image": "https://i.ibb.co/bs4ztwz/tesla-2.jpg",
