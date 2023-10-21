@@ -1,17 +1,31 @@
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
+import { ThemeContext } from "../../ThemeContext";
 
 
-const Header = () => {    
+const Header = () => {
 
     const { user, logOut } = useContext(AuthContext);
-   
+    const { theme, toggleTheme } = useContext(ThemeContext);
+
+    const [isDarkTheme, setIsDarkTheme] = useState(theme === "dark-theme");
+    useEffect(() => {
+        document.documentElement.setAttribute("data-theme", isDarkTheme ? "dark" : "light");
+    }, [isDarkTheme]);
     const handleSignOut = () => {
         logOut()
             .then()
             .catch()
     }
+    
+
+    const toggleThemeSwitch = () => {
+        setIsDarkTheme((prevIsDarkTheme) => {
+            toggleTheme(); 
+            return !prevIsDarkTheme; 
+        });
+    };
 
     return (
         <div>
@@ -33,7 +47,12 @@ const Header = () => {
                     <div className="form-control">
                         <label className="label cursor-pointer p-3">
                             <span className="label-text p-4">Theme</span>
-                            <input type="checkbox" className="toggle"  />
+                            <input
+                                type="checkbox"
+                                className="toggle"
+                                checked={isDarkTheme}
+                                onChange={toggleThemeSwitch}
+                            />
                         </label>
                     </div>
                 </div>
@@ -49,7 +68,7 @@ const Header = () => {
                 <div className="navbar-end p-2 hidden lg:flex">
                     {
                         user ?
-                            <><span className="p-4">{user.email}</span><span className=""><img className="w-12 rounded-full" src={user.photoURL ? user.photoURL : "https://i.ibb.co/MSHTpdv/user.jpg"} alt="picture" /></span><button onClick={handleSignOut} className="btn btn-ghost">Sign Out</button></>
+                            <><span className="p-4">{user.displayName}</span><span className=""><img className="w-12 rounded-full" src={user.photoURL ? user.photoURL : "https://i.ibb.co/MSHTpdv/user.jpg"} alt="picture" /></span><button onClick={handleSignOut} className="btn btn-ghost">Sign Out</button></>
 
                             :
                             <Link to='/login'><button className="btn btn-ghost">Login</button></Link>

@@ -1,7 +1,9 @@
 import { Link, useNavigate } from "react-router-dom";
+// import Navbar from "./Navbar";
 import { useContext, useState } from "react";
-import { AuthContext } from "../../Providers/AuthProvider";
+// import { AuthContext } from "../Providers/AuthProvider";
 import Swal from "sweetalert2";
+import { AuthContext } from "../../Providers/AuthProvider";
 
 
 const Register = () => {
@@ -16,11 +18,10 @@ const Register = () => {
         e.preventDefault();
         console.log(e.currentTarget);
         const form = new FormData(e.currentTarget);
-        const name = form.get('name');
-        const last_name = form.get('last_name');
+        const displayName = form.get('displayName');
         const email = form.get('email');
         const password = form.get('password');
-        console.log(name, last_name, email, password);
+        console.log(displayName, email, password);
         setRegisterError('');
 
         if (password.length < 6) {
@@ -37,7 +38,7 @@ const Register = () => {
             return;
         }
 
-        createUser(name, last_name, email, password)
+        createUser(email, password)
             .then(result => {
                 Swal.fire('You registered successfully')
                 navigate('/');
@@ -50,7 +51,7 @@ const Register = () => {
 
     return (
         <div className="w-9/12 mx-auto">
-            
+            {/* <Navbar></Navbar> */}
             <div>
                 <h2 className="text-4xl text-center py-16">Please Register</h2>
                 <form onSubmit={handleRegister} className="lg:w-1/2 mx-auto">
@@ -58,13 +59,13 @@ const Register = () => {
                         <label className="label">
                             <span className="label-text">First Name</span>
                         </label>
-                        <input type="text" name="name" placeholder="First Name" className="input input-bordered" required />
+                        <input type="text" name="displayName" placeholder="First Name" className="input input-bordered" required />
                     </div>
                     <div className="form-control">
                         <label className="label">
                             <span className="label-text">Last Name</span>
                         </label>
-                        <input type="text" name="last_name" placeholder="Last Name" className="input input-bordered" required />
+                        <input type="text" name="displayName" placeholder="Last Name" className="input input-bordered" required />
                     </div>
                     <div className="form-control">
                         <label className="label">

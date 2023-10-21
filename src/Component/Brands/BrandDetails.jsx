@@ -7,8 +7,6 @@ const BrandDetails = () => {
     const { brand } = useParams();
     const brandName = brandNames.find(brandName => brandName.brand == brand);
     // console.log(brandName);
-
-
     // const { adv_image_1, adv_image_2, adv_image_3 } = brandDetail;
 
 

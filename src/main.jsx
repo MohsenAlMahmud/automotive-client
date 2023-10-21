@@ -22,6 +22,7 @@ import UpdateProduct from './Component/ServerSide/UpdateProduct';
 import ProductDetails from './Component/Brands/ProductDetails';
 import PrivateRoute from './PrivateRoute';
 import Page404 from './Component/Home/Page404';
+import { ThemeProvider } from './ThemeContext';
 
 
 
@@ -40,29 +41,29 @@ const router = createBrowserRouter([
         path: '/brands',
         element: <Brands></Brands>,
         loader: () => fetch('/brands.json'),
-        
+
       },
       {
         path: '/brand/:brand',
-        element: <BrandDetails></BrandDetails>,        
-        loader:  () => fetch(`https://automotive-server-nine.vercel.app/users`)
-        
+        element: <BrandDetails></BrandDetails>,
+        loader: () => fetch(`https://automotive-server-nine.vercel.app/users`)
+
       },
       {
         path: '/individualBrandProduct/:brand',
         element: <IndivisualBrandProduct></IndivisualBrandProduct>,
-        
+
       },
       {
         path: '/productDetails/:id',
         element: <PrivateRoute><ProductDetails></ProductDetails></PrivateRoute>,
-        loader:  () => fetch(`https://automotive-server-nine.vercel.app/users`)
+        loader: () => fetch(`https://automotive-server-nine.vercel.app/users`)
       },
-      
+
       {
         path: '/myCart',
         element: <PrivateRoute><MyCart></MyCart></PrivateRoute>,
-        loader:  () => fetch(`https://automotive-server-nine.vercel.app/products`)
+        loader: () => fetch(`https://automotive-server-nine.vercel.app/products`)
       },
       {
         path: '/login',
@@ -79,7 +80,7 @@ const router = createBrowserRouter([
       {
         path: '/updateProduct/:id',
         element: <PrivateRoute><UpdateProduct></UpdateProduct></PrivateRoute>,
-        loader: ({params}) => {
+        loader: ({ params }) => {
           console.log(params);
           return fetch(`https://automotive-server-nine.vercel.app/users/${params.id}`);
         },
@@ -87,11 +88,11 @@ const router = createBrowserRouter([
       {
         path: '/displayUserInput',
         element: <DisplayUserInput></DisplayUserInput>,
-        loader:  () => fetch(`https://automotive-server-nine.vercel.app/users`)
+        loader: () => fetch(`https://automotive-server-nine.vercel.app/users`)
       },
       {
         path: '/*',
-        element: <Page404></Page404>        
+        element: <Page404></Page404>
       },
     ]
   },
@@ -100,7 +101,9 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <AuthProvider>
-      <RouterProvider router={router}></RouterProvider>
+      <ThemeProvider>
+        <RouterProvider router={router}></RouterProvider>
+      </ThemeProvider>
     </AuthProvider>
   </React.StrictMode>,
 )
