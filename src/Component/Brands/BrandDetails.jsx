@@ -16,7 +16,7 @@ const BrandDetails = () => {
         <div>
             <div className="carousel w-full">
                 <div id="slide1" className="carousel-item flex relative w-full h-[950px]">
-                    <div className="card card-side bg-base-100 gap-10 shadow-xl">
+                    <div className="md:card md:card-side bg-base-100 gap-10 shadow-xl">
                         <figure className="flex-1"><img src="https://i.ibb.co/PgXNdc0/toyota-1.jpg" className="w-full" /></figure>
                         <div className="flex justify-center items-center flex-1 p-10">
                             <div className="py-10 px-10">
@@ -37,7 +37,7 @@ const BrandDetails = () => {
                     </div>
                 </div>
                 <div id="slide2" className="carousel-item relative w-full">
-                    <div className="card card-side bg-base-100 shadow-xl">
+                    <div className="md:card md:card-side bg-base-100 shadow-xl">
                         <figure className="flex-1"><img src="https://i.ibb.co/P5JVqD6/ford-3.jpg" className="w-full" /></figure>
                         <div className="flex justify-center items-center flex-1 p-10">
                             <div className="py-10 px-10">
@@ -58,7 +58,7 @@ const BrandDetails = () => {
                     </div>
                 </div>
                 <div id="slide3" className="carousel-item relative w-full h-[950px]">
-                    <div className="card card-side bg-base-100 shadow-xl">
+                    <div className="md:card md:card-side bg-base-100 shadow-xl">
                         <figure className="flex-1"><img src="https://i.ibb.co/gt5Xjy2/bmw-1.jpg" className="w-full" /></figure>
                         <div className="flex justify-center items-center flex-1 p-10">
                             <div className="py-10 px-10">
@@ -79,7 +79,7 @@ const BrandDetails = () => {
                     </div>
                 </div>
                 <div id="slide4" className="carousel-item relative w-full h-[950px]">
-                    <div className="card card-side bg-base-100 shadow-xl">
+                    <div className="md:card md:card-side bg-base-100 shadow-xl">
                         <figure className="flex-1"><img src="https://i.ibb.co/3fgW8PT/Mercedes-Benz-1.jpg" className="w-full" /></figure>
                         <div className="flex justify-center items-center flex-1 p-10">
                             <div className="py-10 px-10">
@@ -100,7 +100,7 @@ const BrandDetails = () => {
                     </div>
                 </div>
                 <div id="slide5" className="carousel-item relative w-full h-[950px]">
-                    <div className="card card-side bg-base-100 shadow-xl">
+                    <div className="md:card md:card-side bg-base-100 shadow-xl">
                         <figure className="flex-1"><img src="https://i.ibb.co/8j4tDNT/Tesla-1.jpg" className="w-full" /></figure>
                         <div className="flex justify-center items-center flex-1 p-10">
                             <div className="py-10 px-10">
@@ -121,7 +121,7 @@ const BrandDetails = () => {
                     </div>
                 </div>
                 <div id="slide6" className="carousel-item relative w-full h-[950px]">
-                    <div className="card card-side bg-base-100 shadow-xl">
+                    <div className="md:card md:card-side bg-base-100 shadow-xl">
                         <figure className="flex-1"><img src="https://i.ibb.co/dJj0NB3/Honda-1.jpg" className="w-full" /></figure>
                         <div className="flex justify-center items-center flex-1 p-10">
                             <div className="py-10 px-10">

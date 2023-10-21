@@ -17,9 +17,10 @@ const Register = () => {
         console.log(e.currentTarget);
         const form = new FormData(e.currentTarget);
         const name = form.get('name');
+        const last_name = form.get('last_name');
         const email = form.get('email');
         const password = form.get('password');
-        console.log(name, email, password);
+        console.log(name, last_name, email, password);
         setRegisterError('');
 
         if (password.length < 6) {
@@ -36,7 +37,7 @@ const Register = () => {
             return;
         }
 
-        createUser(email, password)
+        createUser(name, last_name, email, password)
             .then(result => {
                 Swal.fire('You registered successfully')
                 navigate('/');
@@ -63,7 +64,7 @@ const Register = () => {
                         <label className="label">
                             <span className="label-text">Last Name</span>
                         </label>
-                        <input type="text" name="name" placeholder="Last Name" className="input input-bordered" required />
+                        <input type="text" name="last_name" placeholder="Last Name" className="input input-bordered" required />
                     </div>
                     <div className="form-control">
                         <label className="label">
