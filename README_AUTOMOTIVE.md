@@ -12,4 +12,4 @@ The website's navigation is simple and intuitive, ensuring that users can move a
 
 
 # Client Side Live Link:
-https://automotive-client-f6d82.web.app/
+https://eclectic-quokka-610824.netlify.app/
