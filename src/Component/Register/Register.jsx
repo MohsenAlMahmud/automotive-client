@@ -1,7 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
-// import Navbar from "./Navbar";
 import { useContext, useState } from "react";
-// import { AuthContext } from "../Providers/AuthProvider";
 import Swal from "sweetalert2";
 import { AuthContext } from "../../Providers/AuthProvider";
 
@@ -51,7 +49,7 @@ const Register = () => {
 
     return (
         <div className="w-9/12 mx-auto">
-            {/* <Navbar></Navbar> */}
+            
             <div>
                 <h2 className="text-4xl text-center py-16">Please Register</h2>
                 <form onSubmit={handleRegister} className="lg:w-1/2 mx-auto">
